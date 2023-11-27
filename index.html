@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Skinly</title>
+    
+</head>
+<body>
+    <audio src="videoplayback.m4a" id="audio"></audio>
+
+    <header>
+    </header>
+    <script>
+        function abrir(){
+            window.location.href ='404.html'
+        }
+    </script>
+
+    <div class="texto">
+        <center><h1 style="color: #c300ff">Produtos</h1></center>
+        
+    </div>
+    <section>
+        <div class="produto">
+            <img src="https://i.pinimg.com/564x/fd/b0/a3/fdb0a300d71bcc0c511f597b265deb70.jpg">
+            <div class="text">
+                <h1>Sabonete Facial - Melu - Ruby Rose</h1>
+                <p>Sabonete Facial - Melu - Ruby Rose A linha Melu traz de uma forma prática o sabonete perfeito para iniciar seu dia com aquele skincare maravilhoso.</p>
+                
+                <button class="comprar" onclick="abrir()">Compra</button>
+
+            </div>
+        </div>
+
+
+        <div class="produto">
+            <img src="https://i.pinimg.com/564x/d4/a6/84/d4a68470241a745efe278b390e63ea62.jpg">
+            <div class="text">
+                <h1>Sérum facial Melu Ruby rose</h1>
+                <p>Perfeição existe e posso provar. Essa linha de seruns faciais da Melu, sao perfeitos. Cuidado que a sua pele precisa.</p>
+                
+                <button class="comprar" onclick="abrir()">Compra</button>
+
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="https://i.pinimg.com/564x/0b/a7/95/0ba7950aa583ea72c0424301ce7f6f15.jpg">
+            <div class="text">
+                <h1>Linha Stay Fix Ruby Rose</h1>
+                <p></p>
+
+                <button class="comprar" onclick="abrir()">Compra</button>
+                
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="https://florencebymills.com/cdn/shop/files/230627_Florence_Q465749_2700x4070_8e71901b-d9b0-46fd-a745-73831de85320.jpg?v=1695765413&width=1350">
+            <div class="text">
+                <h1>JUST FOR YOU: VOCÊ É O MELHOR</h1>
+                <p>Hora de se deliciar com alguns best-sellers de flo e itens de edição limitada! Comece com Clean Magic Face Wash para rejuvenescer a pele e remover a maquiagem. Em seguida, é hora de uma redefinição de pele com a ajuda de Let It Glow Peel Off Mask.</p>
+
+                <button class="comprar" onclick="abrir()">Compra</button>
+                
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="https://sdcdn.io/mac/br/mac_sku_SRM101_1x1_0.png?width=1080&height=1080">
+            <div class="text">
+                <h1>SPRAY FIXADOR MAC FIX+ STAY OVER</h1>
+                <p>Um spray fixador hidratante e sem álcool que fixa a maquiagem por 16 horas, além de proteger contra a poluição e a luz azul</p>
+
+                <button class="comprar" onclick="abrir()">Compra</button>
+                
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>©2023 Skinly.inc</p>
+        <span>Criadora: Livia Noivais Bernardes</span>
+        <span>Professora: Janaina Mota</span>
+        <p>IFBA-Campus Brumado</p>
+    </footer>
+
+    <script>
+        //pega o elemento de audio
+        var audio = document.getElementById('audio');
+
+        //cria uma função pra toca e deixa em loop o audio
+        function tocar() {
+            audio.loop = true;
+            audio.play();
+        }
+
+        //quando tiver um click em quanquer parte do site é começa a tocar a musica
+        document.addEventListener('click', function(event) {
+            tocar()
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body{
+    color: #fdefef;
+}
+
+section
+{
+    text-align: -webkit-center;
+    margin-top: 3em;
+}
+
+header
+{
+    background: url('Skinly.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 40em;
+}
+
+
+.produto
+{
+    display: grid;
+    grid-template-columns: 20% 75%;
+    margin-bottom: 1.5em;
+    padding: 2em;
+    border-radius: 15px;
+    width: 60%;
+    background-color: #df77ff;
+}
+
+.produto img
+{
+    position: relative;
+    width: 11.5em;
+    height: 12em;
+    left: -7em;
+    border: #df77ff 10px solid;
+    border-radius: 7px;
+    background: #ffe9e9;
+    margin-top: 1em;
+}
+
+.produto img:hover
+{
+    transition: all 0.3s ease-in-out;
+    scale: 1.5;
+
+    cursor: zoom-in;
+}
+
+button
+{
+    color: #e8b4f8;
+    border: 1.5px solid #e8b4f8;
+    border-radius: 25px;
+    scale: 2;
+    background: transparent;
+    margin: 1em;
+    transition: all 0.3s ease-out;
+}
+
+button:hover
+{
+    color: #df77ff;
+    background-color: #e8b4f8;
+    cursor: pointer;
+}
+
+button:active{
+    scale: 1.5;
+}
+
+footer
+{   
+    padding-top: 1em;
+    text-align: center;
+    background-color: #df77ff;
+}
+
+footer span
+{
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: large;
+}
+
+footer p
+{
+    font-size: large;
+}

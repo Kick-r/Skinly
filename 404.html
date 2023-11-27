@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    
+.shodown
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.shodown #arigato
+{
+    font-size: 400%;
+    position: relative;
+    top: 20%;
+    color: #c300ff;
+}
+
+button
+{
+    color: #e8b4f8;
+    border: 1.5px solid #e8b4f8;
+    border-radius: 25px;
+    scale: 2;
+    background: transparent;
+    margin: 7em;
+    transition: all 0.3s ease-out;
+}
+
+button:hover
+{
+    color: #c300ff;
+    background-color: #e8b4f8;
+}
+
+button:active{
+    scale: 1.5;
+}
+</style>
+<div class="shodown" id="sombra">
+    <div class="card">
+        <h1>Deseja Continuar?</h1>
+    <button id="yes">Sim</button><button id="no">Não</button>
+
+    
+    </div>
+    <h1 id="arigato"></h1>
+
+    <center><h2 style="color: #c300ff;"></h2></center>
+    
+</div>
+
+<script>
+    var yes = document.getElementById('yes');
+    var no = document.getElementById('no');
+    var text = document.getElementById('arigato');
+    var all = document.getElementById('sombra');
+    var H2 = document.querySelector('h2');
+
+    
+
+    yes.addEventListener('click', function(){
+        let x = 0;
+        text.innerText = 'Obrigado, por ter Comprado!!'
+        var inter = setInterval(function(){
+            x++;
+            H2.innerText = `voltando em ${6 - x}s`
+            if(x > 5){
+                window.location.href = 'index.html'
+            }
+        }, 1000);
+    });
+    no.addEventListener('click', function(){
+        all.style.display = 'none';
+        window.location.href = 'index.html'
+    })
+</script>
+</body>
+</html>
